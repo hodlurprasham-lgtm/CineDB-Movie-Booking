@@ -1,7 +1,7 @@
 ﻿import sqlite3
 import os
 
-DB_PATH = os.environ.get('DATABASE_PATH', os.path.join(os.path.dirname(__file__), '..', 'cinedb.sqlite'))
+DB_PATH = os.environ.get('DATABASE_PATH', os.path.join(os.path.dirname(__file__), 'cinedb.sqlite'))
 
 def get_db():
     conn = sqlite3.connect(
